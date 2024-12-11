@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./restaurant.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Restaurant</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional: FontAwesome for social icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for the page */
+        .hero-section {
+            background-image: url('https://via.placeholder.com/1920x700?text=Delicious+Dish'); /* Hero section background */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .menu-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer .social-icons i {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Delicious Restaurant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div>
+            <h1>Welcome to Delicious Restaurant</h1>
+            <a href="#menu" class="btn btn-light btn-lg">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="container py-5">
+        <h2 class="text-center mb-5">Our Menu</h2>
+        <div class="row">
+            <div class="col-md-4 menu-item">
+                <img src="salade-tunisienne-.jpg" alt="Dish 1">
+                <h3>Dish 1</h3>
+                <p>Salades Tunisiennes </p>
+                <p><strong>14.900</strong></p>
+            </div>
+            <div class="col-md-4 menu-item">
+                <img src="couscous-viande_0.jpg" alt="Dish 2">
+                <h3>Dish 2</h3>
+                <p>Couscous Tunisien </p>
+                <p><strong>29.900</strong></p>
+            </div>
+            <div class="col-md-4 menu-item">
+                <img src="fruits-de-mer-a-la-grecque.jpeg" alt="Dish 3">
+                <h3>Dish 3</h3>
+                <p>Fuits de mer </p>
+                <p><strong>79.900</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images.jpeg" alt="About Us" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>Delicious Restaurant is your go-to place for a delightful dining experience. We offer a wide range of
+                    mouth-watering dishes, crafted with the finest ingredients. Our chefs are dedicated to bringing you
+                    the best flavors and presentation to ensure a memorable meal every time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Delicious Restaurant | All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS & Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
